@@ -62,4 +62,13 @@ To use this function you would pass any number of variables that you would like 
 `p($first, $second, $etc);`
 
 All Done!
+
+### Using the logging function
+First make sure that the "Logs" folder within the installation directory of this plugin is fully writable.
+
+Now, simply pass a message to the `l();` function. Your message will be saved, along with the date, time and your IP address to the Logs/default.log file.
+
+Usage for this function is as follows:
+
+`l($message, $logFileName);`
     
