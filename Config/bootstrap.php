@@ -221,7 +221,9 @@ function l( $msg='', $type='default' )
 /**
  * Overrides
  */
-set_error_handler("ee");
-register_shutdown_function('handleFatalPhpError');
-Configure::write('Error.handler', 'ee');
-
+if (Configure::read('debug')>0)
+{
+    set_error_handler("ee");
+    register_shutdown_function('handleFatalPhpError');
+    Configure::write('Error.handler', 'ee');
+}
