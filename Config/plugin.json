@@ -1,0 +1,15 @@
+{
+	"name": "Error and Debugging",
+	"description": "Awesome error and debugging plugin",
+
+	"author": "Jonathon Byrd",
+	"authorEmail": "jonathon@redrokk.com",
+	"authorUrl": "http://redrokk.com",
+
+	"dependencies": {
+		"plugins": [
+			"acl",
+			"extensions"
+		]
+	}
+}
